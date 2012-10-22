@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PHQ-9</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+<script type="text/javascript">
+        function DisplayPrice(price){
+                        var val1 = 0;
+                        for( i = 0; i < document.form1.price.length; i++ ){
+                                if( document.form1.price[i].checked == true ){
+                                        val1 = document.form1.price[i].value;
+                                }
+                        }
+
+                        var val2 = 0;
+                        for( i = 0; i < document.form2.price.length; i++ ){
+                                if( document.form2.price[i].checked == true ){
+                                        val2 = document.form2.price[i].value;
+                                }
+                        }
+			var val3 = 0;
+                        for( i = 0; i < document.form3.price.length; i++ ){
+                                if( document.form3.price[i].checked == true ){
+                                        val3 = document.form3.price[i].value;
+                                }
+                        }
+			var val4 = 0;
+                        for( i = 0; i < document.form4.price.length; i++ ){
+                                if( document.form4.price[i].checked == true ){
+                                        val4 = document.form4.price[i].value;
+                                }
+                        }
+			var val5 = 0;
+                        for( i = 0; i < document.form5.price.length; i++ ){
+                                if( document.form5.price[i].checked == true ){
+                                        val5 = document.form5.price[i].value;
+                                }
+                        } var val6 = 0;
+                        for( i = 0; i < document.form6.price.length; i++ ){
+                                if( document.form6.price[i].checked == true ){
+                                        val6 = document.form6.price[i].value;
+                                }
+                        }var val7 = 0;
+                        for( i = 0; i < document.form7.price.length; i++ ){
+                                if( document.form7.price[i].checked == true ){
+                                        val7 = document.form7.price[i].value;
+                                }
+                        }var val8 = 0;
+                        for( i = 0; i < document.form8.price.length; i++ ){
+                                if( document.form8.price[i].checked == true ){
+                                        val8 = document.form8.price[i].value;
+                                }
+                        }var val9 = 0;
+                        for( i = 0; i < document.form9.price.length; i++ ){
+                                if( document.form9.price[i].checked == true ){
+                                        val9 = document.form9.price[i].value;
+                                }
+                        }
+var sum=0;
+                        var sum=parseInt(val1) + parseInt(val2)+ parseInt(val3)+ parseInt(val4)+ parseInt(val5)+ parseInt(val6)+ parseInt(val7)+ parseInt(val8)+ parseInt(val9);
+            document.getElementById('totalSum').value=sum;
+        }
+    </script>
+</head>
+<body>
+<div data-role="navbar">
+	<ul>
+		<li><a href="phq9.html" >English</a></li>
+		<li><a href="phq9Spanish.html" class="ui-btn-active ui-state-persist">Spanish</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+<B> REFERESH PAGE ONCE BEFORE USING!</B>
+<br><p> Durante las últimas 2 semanas, ¿cuánto le han molestado...</p>
+
+   <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>1. 1. Tener poco interés o placer en hacer las cosas</legend>
+    <form name="form1" id="form1" runat="server">
+        
+        <ul><li><input id="rdo_1" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1">Nunca.</label>
+        
+        <li><input id="rdo_2" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2">Varios.</label>
+      <li>  <input id="rdo_3" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3">Más de la mitad.</label>
+      <li>  <input id="rdo_4" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4">Casi todos los dias</label>
+
+    </form></fieldset>
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>2. Sentirse desanimado/a, deprimido/a, o sin esperanza</legend>
+    <form name="form2" id="form2" runat="server">
+        
+        <ul><li><input id="rdo_1a" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1a">Nunca.</label>
+        
+        <li><input id="rdo_2a" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2a">Varios.</label>
+      <li>  <input id="rdo_3a" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3a">Más de la mitad.</label>
+      <li>  <input id="rdo_4a" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4a">Casi todos los dias</label>
+
+    </form></fieldset>
+
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>3. Con problemas en dormirse o en mantenerse dormida, o en dormir demasiado<br></legend>
+    <form name="form3" id="form3" runat="server">
+        
+        <ul><li><input id="rdo_1b" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1b">Nunca.</label>
+        
+        <li><input id="rdo_2b" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2b">Varios.</label>
+      <li>  <input id="rdo_3b" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3b">Más de la mitad.</label>
+      <li>  <input id="rdo_4b" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4b">Casi todos los dias</label>
+
+    </form></fieldset>
+
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>4. Sentirse cansado/a o tener poca energía</legend>
+    <form name="form4" id="form4" runat="server">
+        
+        <ul><li><input id="rdo_1c" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1c">Nunca.</label>
+        
+        <li><input id="rdo_2c" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2c">Varios.</label>
+      <li>  <input id="rdo_3c" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3c">Más de la mitad.</label>
+      <li>  <input id="rdo_4c" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4c">Casi todos los dias</label>
+
+    </form></fieldset>
+
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>5. Tener poco apetito o comer en exceso.</legend>
+    <form name="form5" id="form5" runat="server">
+        
+        <ul><li><input id="rdo_1d" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1d">Nunca.</label>
+        <li><input id="rdo_2d" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2d">Varios.</label>
+      <li>  <input id="rdo_3d" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3d">Más de la mitad.</label>
+      <li>  <input id="rdo_4d" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4d">Casi todos los dias</label>
+
+    </form></fieldset>
+
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>6. Sentir falta de amor propio — o que sea un fracaso o que decepcionara a sí mismo/a o a su familia</legend>
+    <form name="form6" id="form6" runat="server">
+        
+        <ul><li><input id="rdo_1e" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1e">Nunca.</label>
+        
+        <li><input id="rdo_2e" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2e">Varios.</label>
+      <li>  <input id="rdo_3e" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3e">Más de la mitad.</label>
+      <li>  <input id="rdo_4e" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4e">Casi todos los dias</label>
+
+    </form></fieldset>
+
+    <fieldset data-role="controlgroup" data-mini="true">
+ <legend>7. Tener dificultad para concentrarse en cosas tales como leer el periódico o mirar la televisión</legend>
+    <form name="form7" id="form7" runat="server">
+        
+        <ul><li><input id="rdo_1f" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1f">Nunca.</label>
+        
+        <li><input id="rdo_2f" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2f">Varios.</label>
+      <li>  <input id="rdo_3f" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3f">Más de la mitad.</label>
+      <li>  <input id="rdo_4f" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4f">Casi todos los dias</label>
+
+    </form></fieldset>
+
+    <fieldset data-role="controlgroup"  data-mini="true">
+ <legend>8. Se mueve o habla tan lentamente que otra gente se podría dar cuenta — o de lo contrario, está tan agitado/a o inquieto/a que se mueve mucho más de lo acostumbrado.</legend>
+    <form name="form8" id="form8" runat="server">
+        
+        <ul><li><input id="rdo_1g" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1g">Nunca.</label>
+        
+        <li><input id="rdo_2g" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2g">Varios.</label>
+      <li>  <input id="rdo_3g" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3g">Más de la mitad.</label>
+      <li>  <input id="rdo_4g" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4g">Casi todos los dias</label>
+
+    </form></fieldset>
+
+ <fieldset data-role="controlgroup" data-mini="true">
+ <legend>9. Se le han ocurrido pensamientos de que sería mejor estar muerta o de que se haría daño de alguna manera</legend>
+    <form name="form9" id="form9" runat="server">
+        
+        <ul><li><input id="rdo_1h" type="radio" value="0" name="price" onclick="DisplayPrice(this.value);">
+ <label for="rdo_1h">Nunca.</label>
+        
+        <li><input id="rdo_2h" type="radio" value="1" name="price" onclick="DisplayPrice(this.value);">
+<label for="rdo_2h">Varios.</label>
+      <li>  <input id="rdo_3h" type="radio" value="2" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_3h">Más de la mitad.</label>
+      <li>  <input id="rdo_4h" type="radio" value="3" name="price" onclick="DisplayPrice(this.value);">
+        
+<label for="rdo_4h">Casi todos los dias</label>
+
+    </form></fieldset></div>
+    
+    <input data-position="fixed" type="text" name="totalSum" id="totalSum" value="PHQ-9 Score" size="2" readonly="readonly">
+
+
+</body>
