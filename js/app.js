@@ -1,9 +1,11 @@
-$(document).delegate("#phq9", "pageinit", function() {
-  $('#phq9 :radio').click(function() {
-    var total = 0;
-    $('#phq9 :checked').each(function() { total += parseInt($(this).val(), 10); });
-    $('#totalSum').val(total);
+$(document).delegate("#phq9,#phq9-spanish", "pageinit", function() {
+  $(this).find(':radio').click(function() {
+    var total = 0,
+      $page = $(this).closest('#phq9,#phq9-spanish');
+    $page.find(':checked').each(function() { total += parseInt($(this).val(), 10); });
+    $page.find('[name=totalSum]').val(total);
   });
+  $(this).find('[name=totalSum]').unbind('focus blur');
 });
 
 
