@@ -3,9 +3,8 @@ $(document).delegate("#phq9,#phq9-spanish", "pageinit", function() {
     var total = 0,
       $page = $(this).closest('#phq9,#phq9-spanish');
     $page.find(':checked').each(function() { total += parseInt($(this).val(), 10); });
-    $page.find('[name=totalSum]').val(total);
+    $page.find('.totalSum').text("Score: " + total);
   });
-  $(this).find('[name=totalSum]').unbind('focus blur');
 });
 
 

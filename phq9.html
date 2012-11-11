@@ -4,7 +4,7 @@
   <title>PHQ-9</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
-  <link rel="stylesheet" href="themes/colors.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
   <script src="js/jquery-1.8.2.min.js"></script>
   <script src="js/jquery.mobile-1.2.0.min.js"></script>
   <script src="js/app.js"></script>
@@ -12,13 +12,30 @@
 <body>
   
 <div id="phq9" data-role="page">
-    
-<div data-role="navbar">
-  <ul>
-    <li><a href="phq9.html" class="ui-btn-active ui-state-persist">English</a></li>
-    <li><a href="phq9Spanish.html">Spanish</a></li>
-  </ul>
-</div><!-- /navbar -->
+
+<div data-role="header" data-position="fixed">
+  <h1>PHQ-9 Score</h1>
+  <a class="button slideup" id="infoButton" href="index.html">Back</a>
+  <div class="ui-body ui-body-e totalSum">Current Score</div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="phq9.html" class="ui-btn-active ui-state-persist">English</a></li>
+      <li><a href="phq9Spanish.html">Spanish</a></li>
+    </ul>
+  </div><!-- /navbar -->
+</div>
+
+<div data-role="footer" data-id="nav" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="IThelp.html" data-icon="info">FAQ</a></li>
+      <li><a href="phone.html" data-icon="grid" >Call</a></li>
+      <li><a href="index.html" data-icon="home">Home</a></li>
+      <li><a href="FS.html" data-icon="gear">FS</a></li>
+      <li><a href="forms.html" data-icon="check">Forms</a></li>
+    </ul>
+  </div><!-- /navbar -->
+</div>
 
    <div data-role="fieldcontain">
     <fieldset data-role="controlgroup" data-mini="true">
@@ -188,9 +205,6 @@
     </form></fieldset>
 
 </div>
-
-    <input data-position="fixed" type="text" name="totalSum" value="PHQ-9 Score" size="2" readonly="readonly">
-    
 </div>
 
 </body>
