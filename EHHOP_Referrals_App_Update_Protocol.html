@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Update/Change App Protocol</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+  		<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+  		<link rel="stylesheet" href="css/app.css" />
+  		<script src="js/jquery-1.8.2.min.js"></script>
+  		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+  		<script src="js/app.js"></script>
+	</head>
+	<body>
+	<div data-role="page">
+	<div data-role="header"><h1>Want to update/change the app?</h1><a class="button slideup" id="infoButton" href="index.html">Back</a>
+	</div><!-- /header -->
+	<div data-role="footer" data-id="nav" data-position="fixed">
+  		<div data-role="navbar">
+    	<ul>
+      	<li><a href="IThelp.html" data-icon="info">FAQ</a></li>
+      	<li><a href="phone.html" data-icon="grid" >Contact</a></li>
+      	<li><a href="index.html" data-icon="home">Home</a></li>
+      	<li><a href="FS.html" data-icon="gear">FS</a></li>
+      	<li><a href="forms.html" data-icon="check">Forms</a></li>
+    	</ul>
+ 	 	</div><!-- /navbar -->
+ 	 </div>
+		<h3>Read about how to layout your change/update first:</h3>
+			<p>A content change/update is a combination of substitutions, deletions, and additions.
+			Please layout all desired changes as a list of instructions each phrased in one of the following ways:
+			</p>
+			<ul>
+				<li>Substitute \type<font color="red">[X]</font> with \type<font color="green">[Y]</font> in <strong>*Location*</strong>
+				</li>
+				<li>Delete \type<font color="red">[X]</font> from <strong>*Location*</strong>
+				</li>
+				<li>Add \type<font color="green">[Y]</font> to <strong>*Location*</strong>
+				</li>
+			</ul>
+			<p>Where&nbsp;
+			<font color="red">[X]</font> is some information/content you want removed or deleted, and&nbsp;
+			<font color="green">[Y]</font> is&nbsp;
+			information/content you want to take its place or to be added. <strong>*Location*</strong>&nbsp;
+			specifies where you want this instruction applied. Finally \type is some language&nbsp;
+			specifying what kind of object you are talking about substituting/deleting/adding.
+			</p>
+			<hr />
+			<h4>How to specify *Location*</h4>
+			<p>*Location* specifies where the change is to take place.  It should be clear&nbsp;
+			with respect to: [1] on which page the substitution, deletion, or addition will occur,&nbsp;
+			and [2] where on that page it will go (in relation to everything else on the page).&nbsp;
+			Since the app is structured exactly like the folders/directories on a computer, specifying location is pretty easy.
+			</p>
+			<h4>How to specify <font color="red">[X]</font> and <font color="green">[Y]</font></h4>
+			<p><font color="red">[X]</font> will refer to what is to be removed. It should be clear from your language exactly what gets removed&nbsp;
+			It is important that <font color="green">[Y]</font> be text/image representing <em>exactly</em> what is to take its place and be added.
+			</p>
+			<h4>How to specify \type</h4>
+			<p>\type specifies the type of information/object <font color="red">[X]</font> or [Y] belongs to. Use&nbsp;
+			a combination of plain english and the abbreviations below to help specify text you want to add/remove:
+			</p>
+			<ul>
+				<li>List Heading - \h</li>
+				<li>Checklist Item - ></li>
+				<li>List Item - -</li>
+				<li>Free Text - \p</li>
+				<li>Navigation Bar Button \nav</li>
+				<li>Link To: E-mail/Phone Number/Google Doc/Other URL - \go(url)</li>
+				<li>Image - \img</li>
+			</ul>
+			<h4>Putting it all together</h4>
+			<p><em>Example:</em> Substitute the entire ACT Checklist with "\pREMINDER: You can use your own account on EPIC to submit referrals requests>Submit&nbsp;
+			appointment request via \go(http://ehhop0.appspot.com/)EPIC >Confirm appointment when prompted >Send reminders to patient" in *ACT checklists all pages*
+			</p>
+			<p>This change would look like:
+			</p>
+		<div data-role="collapsible" data-collapsed="false"><h3><b> Access to Care Team</b></h3>
+		<fieldset data-role="controlgroup">
+			<p>REMINDER: You can use your own account on EPIC to make appointment requests with any department
+			</p>
+			<input type="checkbox" name="cbox_1" id="cbox_1" class="custom" data-mini="true" />
+				<label for="cbox_1">Submit appointment request via <a href="http://ehhop0.appspot.com/">EPIC</a>
+				</label>
+			<input type="checkbox" name="cbox_2" id="cbox_2" class="custom" data-mini="true" />
+				<label for="cbox_2">Confirm appointment when prompted
+				</label>
+			<input type="checkbox" name="cbox_3" id="cbox_3" class="custom" data-mini="true" />
+				<label for="cbox_3">Send reminders to patient <a href="https://trello.com/board/ehhop-referrals-public/511d4848c41b611b5000046a">here</a>.
+				</label>
+		</fieldset>
+		</div>
+		<p>
+		You can make a <a href="https://docs.google.com/spreadsheet/ccc?key=0AiN1f2Y59AbtdDdXeFpkWEN6eXFrMkxwczBVQVFLNVE&usp=sharing">spreadsheet</a>&nbsp;
+		to help list out a whole bunch of content changes at one time.
+		</p>
+		<p>
+		Please don't hesitate to submit changes that do not necessarily fit in the framework presented above.&nbsp;
+		The instructions above are just some specific guidelines for basic content changes.
+		</p>
+		<hr />
+		<h3>I already read all that mumbo jumbo so now what?</h3>
+		<fieldset data-role="controlgroup">
+			<p>REMINDER: Please first sign-up for a Trello account&nbsp;
+			<a href="http://trello.com/">here</a>, and send&nbsp;
+			<a href="mailto:kevin.hu@mssm.edu, powerpak006@gmail.com">us</a> an email to&nbsp;
+			get yourself added to the ehhop-referrals-public board.  This is where you will submit your layouts changes/issues.
+			</p>
+			<input type="checkbox" name="cbox_1a" id="cbox_1a" class="custom" data-mini="true" />
+				<label for="cbox_1a">Layout your change and any comments/issues.
+				</label>
+			<input type="checkbox" name="cbox_2a" id="cbox_2a" class="custom" data-mini="true" />
+				<label for="cbox_2a">Spell-check/Copy-edit Yourself.
+				</label>
+			<input type="checkbox" name="cbox_3a" id="cbox_3a" class="custom" data-mini="true" />
+				<label for="cbox_3a">Submit layout and issue in the new&nbsp;
+				<a href="https://trello.com/board/ehhop-referrals-public/511d4848c41b611b5000046a">Trello Board</a>.
+				</label>
+		</fieldset>
+	</div>	
+	</body>
+</html>
